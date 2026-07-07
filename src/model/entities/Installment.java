@@ -31,6 +31,6 @@ public class Installment {
     @Override
     public String toString() {
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
-        return dueDate.format(fmt) + " - " + String.format("%.2f", amount);
+        return dueDate.format(fmt) + " - $" + String.format("%.2f", amount);
     }
 }
