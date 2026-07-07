@@ -17,7 +17,7 @@ public class Program {
 
         DateTimeFormatter fmt = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-        System.out.println("Enter the contract data: ");
+        System.out.println("Enter contract data: ");
         System.out.print("Contract Number: ");
         int contractNumber = sc.nextInt();
 
@@ -30,7 +30,7 @@ public class Program {
 
         Contract contract = new Contract(contractNumber, date, totalValue);
 
-        System.out.print("Enter the number o installments: ");
+        System.out.print("Enter the number of installments: ");
         int months = sc.nextInt();
 
         ContractService contractService = new ContractService(new PayPalService());
